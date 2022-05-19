@@ -25,7 +25,7 @@ public class User implements Serializable {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;   
 	
-	private String firstName; 
+	private String Vorname; 
 	
 	private String lastName;
 	
@@ -37,9 +37,9 @@ public class User implements Serializable {
 	
 	public User() {	}
 
-	public User(String firstName, String lastName, Date dateNaissance, Role role) {
+	public User(String Vorname, String lastName, Date dateNaissance, Role role) {
 		super();
-		this.firstName = firstName;
+		this.Vorname = Vorname;
 		this.lastName = lastName;
 		this.dateNaissance = dateNaissance;
 		this.role = role;
@@ -49,7 +49,7 @@ public class User implements Serializable {
 	public User(Long id, String firstName, String lastName, Date dateNaissance, Role role) {
 		super();
 		this.id = id;
-		this.firstName = firstName;
+		this.Vorname = Vorname;
 		this.lastName = lastName;
 		this.dateNaissance = dateNaissance;
 		this.role = role;
@@ -58,7 +58,7 @@ public class User implements Serializable {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", dateNaissance="
+		return "User [id=" + id + ", firstName=" + Vorname + ", lastName=" + lastName + ", dateNaissance="
 				+ dateNaissance + ", role=" + role + "]";
 	}
 
